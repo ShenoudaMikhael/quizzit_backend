@@ -17,3 +17,6 @@
 ```
   GET /api/v1/version
 ```
+
+## Related Repositories
+- [Frontend Repository](https://github.com/ShenoudaMikhael/quizzit_frontend): This repository contains the frontend code for our application.
