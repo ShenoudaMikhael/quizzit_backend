@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizzit</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         .cover {
             background: url('/intro.png') no-repeat center center;
@@ -33,6 +34,20 @@
             justify-content: space-around;
             height: 60vh;
             /* Adjust this value as needed */
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #000;
+            font-size: 2em;
         }
     </style>
 </head>
@@ -107,22 +122,62 @@
     <!-- About Section -->
     <section id="about" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">About</h2>
-            <p class="text-center">This project was inspired by [Your Story]. The development timeline started from
-                [Timeline]. This is a Portfolio Project for <a href="https://www.holbertonschool.com"
-                    target="_blank">Holberton School</a>.</p>
-            <div class="text-center">
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-                <a href="https://github.com" target="_blank">GitHub</a> |
-                <a href="https://twitter.com" target="_blank">Twitter</a>
+            <h2 class="text-center my-5 py-5">About</h2>
+
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-4 text-center">
+                    <img src="/devs/abduHany.jpg" alt="Profile Image" class="profile-img">
+                    <h4>Abdulrhman Mohammed</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abduhany/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/abduHany" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/AbduuHany/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-md-4 text-center">
+                    <img src="/devs/salsabil.jpg" alt="Profile Image" class="profile-img">
+                    <h4>Salsabil Ahmed</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/salsabil-el-sayed-642a77287/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/salsapil" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Salsapilaa/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-md-4 text-center">
+                    <img src="/devs/shenoudaMikhael.jpg" alt="Profile Image" class="profile-img">
+                    <h4>Shenouda Mikhael</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shenoudamikhael/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ShenoudaMikhael/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/_Shenouda_" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="text-center mt-3">
-                <a href="https://github.com/project-repo" target="_blank">Project GitHub Repository</a>
+            <div class="container my-5">
+                <h2 class="text-center">Project inspiration!</h2>
+                <p class="text-center">it was Just a regular day right after the release of the Portfolio project
+                    release, we as a team were discussing what to do.. the option for mobile app was on the table,We got
+                    excited for the idea. so ,
+                    why not .. it was a new eperience for most of us, the app idea was to create something fun and
+                    Joyful so we choose a simple quiz App. The development timeline started from
+                    14 June 2024.<br /> This is a Portfolio Project for <a href="https://www.holbertonschool.com"
+                        target="_blank">Holberton School</a> throught ALX Africa/Egypt.</p>
+
+                <div class="text-center mt-3">
+                    <a href="https://github.com/ShenoudaMikhael/quizzit_backend/" target="_blank">GitHub Backend
+                        Repository</a> | <a href="https://github.com/ShenoudaMikhael/quizzit_frontend/"
+                        target="_blank">GitHub Frontend Repository</a>
+                </div>
             </div>
-        </div>
     </section>
 
-    <!-- Video Section -->
+    <!-- Video Section
     <section class="py-5">
         <div class="container">
             <h2 class="text-center">Project Introduction Video</h2>
@@ -131,7 +186,7 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
