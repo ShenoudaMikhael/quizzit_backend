@@ -49,6 +49,35 @@
             color: #000;
             font-size: 2em;
         }
+
+        .carousel-item {
+            height: 100vh;
+        }
+
+        .feature-carousel {
+            padding: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .feature-image img {
+            height: 60vh;
+        }
+
+        .feature-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1px;
+        }
+
+        .feature-text p {
+            width: 50vw;
+        }
     </style>
 </head>
 
@@ -89,33 +118,69 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-5">
-        <div class="container py-5">
-            <h2 class="text-center">Key Features</h2>
-            <div class="features row py-5">
-                <div class="col-md-8 feature text-left">
-                    <div class="feature">
-
-                        <h3>Feature 1 Name</h3>
-                        <p>Description of feature 1.</p>
-                    </div>
-                    <div class="feature">
-
-                        <h3>Feature 2 Name</h3>
-                        <p>Description of feature 2.</p>
-                    </div>
-                    <div class="feature">
-
-                        <h3>Feature 3 Name</h3>
-                        <p>Description of feature 3.</p>
+    <section id="features" clas="py-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="feature-carousel">
+                        <div class="feature-image">
+                            <img src="/features.png" alt="Intro Image">
+                        </div>
+                        <div class="feature-text">
+                            <h1>Constantly Changing Categories</h1>
+                            <h3>Stay Engaged with Fresh Content!</h3>
+                            <p>Our quiz categories are constantly updated with new questions, ensuring that you
+                                always
+                                have
+                                fresh and exciting content to challenge yourself. From pop culture to science,
+                                you'll
+                                never
+                                get bored with the same old questions!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 feature text-center">
-                    <img src="/features.png" alt="Feature 2">
-
+                <div class="carousel-item">
+                    <div class="feature-carousel">
+                        <div class="feature-image">
+                            <img src="/features.png" alt="Intro Image">
+                        </div>
+                        <div class="feature-text">
+                            <h1>Choose Your Difficulty</h1>
+                            <h3>Find the Right Challenge for You!</h3>
+                            <p>Customize your quiz experience by selecting different difficulty levels: easy, medium,
+                                hard, or random. Whether you're just starting out or looking for a tough challenge,
+                                Quizzit lets you tailor your quizzes to match your skill level.</p>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="carousel-item">
+                    <div class="feature-carousel">
+                        <div class="feature-image">
+                            <img src="/features.png" alt="Intro Image">
+                        </div>
+                        <div class="feature-text">
+                            <h1>Track Your Progress and Stats</h1>
+                            <h3>Monitor Your Improvement!</h3>
+                            <p>Keep track of your scores and monitor your progress over time with detailed statistics
+                                and insights. Quizzit helps you identify areas for improvement and motivates you to
+                                achieve higher scores, making you a quiz master in no time!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </section>
 
