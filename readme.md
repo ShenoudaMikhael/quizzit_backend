@@ -19,4 +19,10 @@
 ```
 
 ## Related Repositories
-- [Frontend Repository](https://github.com/ShenoudaMikhael/quizzit_frontend): This repository contains the frontend code for our application.
+- [Frontend Repository](https://github.com/ShenoudaMikhael/quizzit_frontend) - This repository contains the frontend code for our application.
+
+## Authors
+
+- [@AbdelrahmanMetawei](https://github.com/Abduhany/)
+- [@SalsabilAhmed](https://github.com/Salsapil)
+- [@ShenoudaMikhael](https://github.com/ShenoudaMikhael)
