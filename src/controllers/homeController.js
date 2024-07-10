@@ -1,9 +1,13 @@
-const fs = require('fs');
-const quiz_file = './src/assets/quiz.json'
+const fs = require('fs'); // Import the file system module
+const quiz_file = './src/assets/quiz.json' // Define the path to the quiz JSON file
+
 module.exports = {
+    // Handler for the /status route
     status: (req, res) => {
         res.status(200).send({ result: "Okay" });
     },
+
+    // Handler for the /version route
     version: (req, res) => {
 
         try {
@@ -15,6 +19,8 @@ module.exports = {
             console.error('Error reading file:', err);
         }
     },
+
+    // Handler for the /quiz route
     quiz: (req, res) => {
        
         res.status(200).sendfile(quiz_file)
